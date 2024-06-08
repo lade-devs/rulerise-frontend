@@ -51,7 +51,6 @@ export default function Home() {
     const fetched = await api.get('products')
     setProduct(fetched.products);
     setFilteredProducts(fetched.products);
-    console.log(fetched)
   }
 
   type onFilterByProp = (event: React.ChangeEvent<HTMLSelectElement>) => void
